@@ -1,0 +1,68 @@
+/* Styles généraux */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond légère pour tout le site */
+    color: #333; /* Couleur principale du texte */
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    border-radius: 8px; /* Bords arrondis pour le formulaire */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre subtile pour le formulaire */
+}
+
+.blog-post h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les champs */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bords arrondis pour les champs de saisie */
+    margin-bottom: 10px; /* Espacement avant le champ suivant */
+}
+
+textarea {
+    resize: vertical; /* Permet à l'utilisateur de redimensionner le textarea verticalement */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; /* Couleur bleue pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Bords arrondis pour le bouton */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Transition douce au survol */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+}

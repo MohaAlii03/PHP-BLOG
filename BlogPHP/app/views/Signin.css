@@ -1,0 +1,76 @@
+/* Styles généraux */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('../img/background.jpg') no-repeat center center fixed; 
+    background-size: cover; /* Couvre toute la page */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+}
+
+.inscription {
+    width: 100%;
+    max-width: 400px; /* Taille réduite du formulaire */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour le contraste */
+    margin: 20px; /* Espacement autour du formulaire */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les champs */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] + label {
+    padding: 10px;
+    margin: 5px 0; /* Espacement */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bords arrondis pour les champs */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    padding: 10px;
+    margin-top: 10px; /* Espacement au-dessus des boutons */
+    border: none;
+    border-radius: 5px; /* Bords arrondis pour les boutons */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    align-content: center;
+    background-color: #6c757d; /* Couleur différente pour le bouton 'Go back' */
+}
+
+button[type="button"]:hover {
+    background-color: #565e64;
+}
